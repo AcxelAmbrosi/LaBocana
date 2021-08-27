@@ -59,6 +59,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -92,6 +95,12 @@
     <Compile Include="Vistas\Panels\PanelMesa.Designer.cs">
       <DependentUpon>PanelMesa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Transicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Transicion.Designer.cs">
+      <DependentUpon>Transicion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,6 +117,10 @@
     <EmbeddedResource Include="Vistas\Panels\PanelMesa.resx">
       <DependentUpon>PanelMesa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Transicion.resx">
+      <DependentUpon>Transicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +163,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plano-2f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plano-2ff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cielo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comida.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bienvenido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bienvenido f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnOrdenaraHORA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnOrdenar1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

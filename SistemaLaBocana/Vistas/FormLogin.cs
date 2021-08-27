@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace SistemaLaBocana
 {
-    public partial class FormLogin : Form
+    public partial class SplashSceen : Form
     {
-        public FormLogin()
+        public SplashSceen()
         {
             InitializeComponent();
         }
@@ -35,14 +35,16 @@ namespace SistemaLaBocana
         private void button1_Click(object sender, EventArgs e)
         {
           
-            Form frm = new PanelMesa();
+            Form frm = new Transicion();
             frm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            buttonIniciar.Hide();
-            AbrirFrm(new PanelSesion());
+            Form frm = new Transicion();
+            frm.Show();
+            //buttonIniciar.Hide();
+            //AbrirFrm(new PanelSesion());
         }
     }
 }
