@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaLaBocana
 {
-    partial class FormLogin
+    partial class SplashSceen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace SistemaLaBocana
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashSceen));
             this.PanelBase = new System.Windows.Forms.Panel();
             this.buttonOrdenar = new System.Windows.Forms.Button();
             this.buttonIniciar = new System.Windows.Forms.Button();

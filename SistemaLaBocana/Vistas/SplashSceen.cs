@@ -27,7 +27,7 @@ namespace SistemaLaBocana
             {
                 timer1.Stop();
                 this.Hide();
-                FormLogin frmlogin = new FormLogin();
+                SplashSceen frmlogin = new SplashSceen();
                 frmlogin.ShowDialog();
             }
         }

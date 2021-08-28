@@ -35,8 +35,8 @@ namespace SistemaLaBocana.Vistas.Panels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaLaBocana.Properties.Resources.plano_2f;
-            this.ClientSize = new System.Drawing.Size(874, 763);
+            this.BackgroundImage = global::SistemaLaBocana.Properties.Resources.plano_2ff;
+            this.ClientSize = new System.Drawing.Size(874, 886);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "PanelMesa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
