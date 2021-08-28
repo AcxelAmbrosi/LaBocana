@@ -59,6 +59,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnHuevos.Size = new System.Drawing.Size(135, 23);
             this.btnHuevos.TabIndex = 0;
             this.btnHuevos.UseVisualStyleBackColor = false;
+            this.btnHuevos.Click += new System.EventHandler(this.btnHuevos_Click);
             // 
             // btnOmelette
             // 
@@ -74,6 +75,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnOmelette.Size = new System.Drawing.Size(135, 23);
             this.btnOmelette.TabIndex = 1;
             this.btnOmelette.UseVisualStyleBackColor = false;
+            this.btnOmelette.Click += new System.EventHandler(this.btnOmelette_Click);
             // 
             // btnHotcake
             // 
@@ -89,6 +91,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnHotcake.Size = new System.Drawing.Size(135, 23);
             this.btnHotcake.TabIndex = 2;
             this.btnHotcake.UseVisualStyleBackColor = false;
+            this.btnHotcake.Click += new System.EventHandler(this.btnHotcake_Click);
             // 
             // btnHamburguesa
             // 
@@ -104,6 +107,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnHamburguesa.Size = new System.Drawing.Size(135, 23);
             this.btnHamburguesa.TabIndex = 3;
             this.btnHamburguesa.UseVisualStyleBackColor = false;
+            this.btnHamburguesa.Click += new System.EventHandler(this.btnHamburguesa_Click);
             // 
             // btnParrillada
             // 
@@ -119,6 +123,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnParrillada.Size = new System.Drawing.Size(135, 23);
             this.btnParrillada.TabIndex = 4;
             this.btnParrillada.UseVisualStyleBackColor = false;
+            this.btnParrillada.Click += new System.EventHandler(this.btnParrillada_Click);
             // 
             // btnPizza
             // 
@@ -134,6 +139,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnPizza.Size = new System.Drawing.Size(135, 23);
             this.btnPizza.TabIndex = 5;
             this.btnPizza.UseVisualStyleBackColor = false;
+            this.btnPizza.Click += new System.EventHandler(this.btnPizza_Click);
             // 
             // btnPasta
             // 
@@ -149,6 +155,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnPasta.Size = new System.Drawing.Size(135, 23);
             this.btnPasta.TabIndex = 6;
             this.btnPasta.UseVisualStyleBackColor = false;
+            this.btnPasta.Click += new System.EventHandler(this.btnPasta_Click);
             // 
             // btnLasagna
             // 
@@ -164,6 +171,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnLasagna.Size = new System.Drawing.Size(135, 23);
             this.btnLasagna.TabIndex = 7;
             this.btnLasagna.UseVisualStyleBackColor = false;
+            this.btnLasagna.Click += new System.EventHandler(this.btnLasagna_Click);
             // 
             // btnBurrito
             // 
@@ -179,6 +187,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnBurrito.Size = new System.Drawing.Size(148, 23);
             this.btnBurrito.TabIndex = 8;
             this.btnBurrito.UseVisualStyleBackColor = false;
+            this.btnBurrito.Click += new System.EventHandler(this.btnBurrito_Click);
             // 
             // btnGaseosas
             // 
@@ -194,6 +203,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnGaseosas.Size = new System.Drawing.Size(135, 23);
             this.btnGaseosas.TabIndex = 9;
             this.btnGaseosas.UseVisualStyleBackColor = false;
+            this.btnGaseosas.Click += new System.EventHandler(this.btnGaseosas_Click);
             // 
             // btnRefresco
             // 
@@ -209,6 +219,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnRefresco.Size = new System.Drawing.Size(148, 23);
             this.btnRefresco.TabIndex = 10;
             this.btnRefresco.UseVisualStyleBackColor = false;
+            this.btnRefresco.Click += new System.EventHandler(this.btnRefresco_Click);
             // 
             // btnMalteadas
             // 
@@ -224,6 +235,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnMalteadas.Size = new System.Drawing.Size(135, 23);
             this.btnMalteadas.TabIndex = 11;
             this.btnMalteadas.UseVisualStyleBackColor = false;
+            this.btnMalteadas.Click += new System.EventHandler(this.btnMalteadas_Click);
             // 
             // btnCafe
             // 
@@ -239,6 +251,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnCafe.Size = new System.Drawing.Size(135, 23);
             this.btnCafe.TabIndex = 12;
             this.btnCafe.UseVisualStyleBackColor = false;
+            this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
             // 
             // btnChocolate
             // 
@@ -254,6 +267,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.btnChocolate.Size = new System.Drawing.Size(135, 23);
             this.btnChocolate.TabIndex = 13;
             this.btnChocolate.UseVisualStyleBackColor = false;
+            this.btnChocolate.Click += new System.EventHandler(this.btnChocolate_Click);
             // 
             // PanelPedido
             // 

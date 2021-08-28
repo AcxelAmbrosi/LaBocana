@@ -173,9 +173,59 @@ namespace SistemaLaBocana.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconoLupa {
+            get {
+                object obj = ResourceManager.GetObject("IconoLupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconoLupaF {
+            get {
+                object obj = ResourceManager.GetObject("IconoLupaF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IngresoDatos {
+            get {
+                object obj = ResourceManager.GetObject("IngresoDatos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MenuLog {
             get {
                 object obj = ResourceManager.GetObject("MenuLog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PedirYpagar {
+            get {
+                object obj = ResourceManager.GetObject("PedirYpagar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PedirYpagarF {
+            get {
+                object obj = ResourceManager.GetObject("PedirYpagarF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +256,16 @@ namespace SistemaLaBocana.Properties {
         internal static System.Drawing.Bitmap plano_2ff {
             get {
                 object obj = ResourceManager.GetObject("plano-2ff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SeguirPidiendo {
+            get {
+                object obj = ResourceManager.GetObject("SeguirPidiendo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

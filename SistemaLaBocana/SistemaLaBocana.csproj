@@ -69,6 +69,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Panels\PanelIngresoDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Panels\PanelIngresoDatos.Designer.cs">
+      <DependentUpon>PanelIngresoDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Panels\PanelPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Panels\PanelIngresoDatos.resx">
+      <DependentUpon>PanelIngresoDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Panels\PanelPedido.resx">
       <DependentUpon>PanelPedido.cs</DependentUpon>
@@ -202,6 +211,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Carta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IngresoDatos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoLupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoLupaF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PedirYpagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PedirYpagarF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeguirPidiendo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
