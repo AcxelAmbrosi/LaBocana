@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBLaBocana">
+  <DataContextMoniker Name="/DBLaBocanaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a3ac8b28-fa10-4d46-9d11-da865202e3f8" absoluteBounds="1.375, 1.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaBocanaDataContext/CLIENTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5f419dd-55d7-4409-a9b3-3e6190ea4ef9" absoluteBounds="1.3900000000000001, 2.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8172bc1-7f33-43fa-81eb-9b32275b14ef" absoluteBounds="7.75, 4.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBLaBocanaDataContext/MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d820c1d4-82e4-45cd-a6df-fc0b4c993ff6" absoluteBounds="7.765, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe0235d3-13c6-4c05-93a1-f2678809196e" absoluteBounds="4.5, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DBLaBocanaDataContext/MESA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b539d7f-3053-4e82-911d-8783f2e48ea8" absoluteBounds="4.515, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="515d9e0d-a994-45cc-84bb-8e53e4987511" absoluteBounds="7.875, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBLaBocanaDataContext/ORDEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7922d490-6516-49f4-b299-3feb523677b2" absoluteBounds="7.8900000000000006, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 1.3124995); (2.375 : 1.3124995); (2.375 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaBocanaDataContext/MESA/MESA_CLIENTE" />
+      <nodes>
+        <classShapeMoniker Id="fe0235d3-13c6-4c05-93a1-f2678809196e" />
+        <classShapeMoniker Id="a3ac8b28-fa10-4d46-9d11-da865202e3f8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 1.88064697265625); (6.5 : 1.88064697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaBocanaDataContext/ORDEN/ORDEN_MESA" />
+      <nodes>
+        <classShapeMoniker Id="515d9e0d-a994-45cc-84bb-8e53e4987511" />
+        <classShapeMoniker Id="fe0235d3-13c6-4c05-93a1-f2678809196e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.8125 : 4.375); (8.8125 : 3.20359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaBocanaDataContext/MENU/MENU_ORDEN" />
+      <nodes>
+        <classShapeMoniker Id="b8172bc1-7f33-43fa-81eb-9b32275b14ef" />
+        <classShapeMoniker Id="515d9e0d-a994-45cc-84bb-8e53e4987511" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
