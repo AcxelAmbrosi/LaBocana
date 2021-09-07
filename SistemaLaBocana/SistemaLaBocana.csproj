@@ -333,10 +333,6 @@
     <None Include="Resources\button.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{6E10FBD4-9686-4244-9422-CB60EEFF8A98}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Logica\Logica.csproj">
       <Project>{b91a96a0-2bf5-48dc-9160-75e8c2b4cfde}</Project>
       <Name>Logica</Name>
