@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="inventario\Caja.cs" />
     <Compile Include="inventario\Cliente.cs" />
     <Compile Include="inventario\Menu.cs" />
     <Compile Include="inventario\Mesa.cs" />

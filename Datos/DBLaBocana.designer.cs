@@ -106,6 +106,14 @@ namespace Datos
 			}
 		}
 		
+		public System.Data.Linq.Table<CAJA> CAJA
+		{
+			get
+			{
+				return this.GetTable<CAJA>();
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.BuscarCliente")]
 		public ISingleResult<BuscarClienteResult> BuscarCliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Desde", DbType="Int")] System.Nullable<int> desde, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Hasta", DbType="Int")] System.Nullable<int> hasta, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Buscar", DbType="VarChar(MAX)")] string buscar)
 		{
@@ -167,6 +175,34 @@ namespace Datos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<listarMenuResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarCaja")]
+		public int InsertarCaja([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SaldoApertura", DbType="Decimal(19,2)")] System.Nullable<decimal> saldoApertura, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SaldoCierre", DbType="Decimal(19,2)")] System.Nullable<decimal> saldoCierre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SaldoActual", DbType="Decimal(19,2)")] System.Nullable<decimal> saldoActual, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Observacion", DbType="VarChar(MAX)")] string observacion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), saldoApertura, saldoCierre, saldoActual, observacion, fecha);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CerrarCaja")]
+		public int CerrarCaja([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id_Caja", DbType="Int")] System.Nullable<int> id_Caja)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_Caja);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AnularCaja")]
+		public int AnularCaja([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id_Caja", DbType="Int")] System.Nullable<int> id_Caja)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_Caja);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.MostrarCaja")]
+		public ISingleResult<MostrarCajaResult> MostrarCaja()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<MostrarCajaResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -937,6 +973,123 @@ namespace Datos
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CAJA")]
+	public partial class CAJA
+	{
+		
+		private int _Id_Caja;
+		
+		private System.Nullable<decimal> _SaldoApertura;
+		
+		private System.Nullable<decimal> _SaldoCierre;
+		
+		private System.Nullable<decimal> _SaldoActual;
+		
+		private string _Observacion;
+		
+		private System.Nullable<System.DateTime> _Fecha;
+		
+		public CAJA()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id_Caja", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int Id_Caja
+		{
+			get
+			{
+				return this._Id_Caja;
+			}
+			set
+			{
+				if ((this._Id_Caja != value))
+				{
+					this._Id_Caja = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoApertura", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoApertura
+		{
+			get
+			{
+				return this._SaldoApertura;
+			}
+			set
+			{
+				if ((this._SaldoApertura != value))
+				{
+					this._SaldoApertura = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoCierre", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoCierre
+		{
+			get
+			{
+				return this._SaldoCierre;
+			}
+			set
+			{
+				if ((this._SaldoCierre != value))
+				{
+					this._SaldoCierre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoActual", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoActual
+		{
+			get
+			{
+				return this._SaldoActual;
+			}
+			set
+			{
+				if ((this._SaldoActual != value))
+				{
+					this._SaldoActual = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Observacion", DbType="VarChar(MAX)")]
+		public string Observacion
+		{
+			get
+			{
+				return this._Observacion;
+			}
+			set
+			{
+				if ((this._Observacion != value))
+				{
+					this._Observacion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Fecha
+		{
+			get
+			{
+				return this._Fecha;
+			}
+			set
+			{
+				if ((this._Fecha != value))
+				{
+					this._Fecha = value;
+				}
+			}
+		}
+	}
+	
 	public partial class BuscarClienteResult
 	{
 		
@@ -1280,6 +1433,122 @@ namespace Datos
 				if ((this._Precio != value))
 				{
 					this._Precio = value;
+				}
+			}
+		}
+	}
+	
+	public partial class MostrarCajaResult
+	{
+		
+		private int _Id_Caja;
+		
+		private System.Nullable<decimal> _SaldoApertura;
+		
+		private System.Nullable<decimal> _SaldoCierre;
+		
+		private System.Nullable<decimal> _SaldoActual;
+		
+		private string _Observacion;
+		
+		private System.Nullable<System.DateTime> _Fecha;
+		
+		public MostrarCajaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id_Caja", DbType="Int NOT NULL")]
+		public int Id_Caja
+		{
+			get
+			{
+				return this._Id_Caja;
+			}
+			set
+			{
+				if ((this._Id_Caja != value))
+				{
+					this._Id_Caja = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoApertura", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoApertura
+		{
+			get
+			{
+				return this._SaldoApertura;
+			}
+			set
+			{
+				if ((this._SaldoApertura != value))
+				{
+					this._SaldoApertura = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoCierre", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoCierre
+		{
+			get
+			{
+				return this._SaldoCierre;
+			}
+			set
+			{
+				if ((this._SaldoCierre != value))
+				{
+					this._SaldoCierre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SaldoActual", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SaldoActual
+		{
+			get
+			{
+				return this._SaldoActual;
+			}
+			set
+			{
+				if ((this._SaldoActual != value))
+				{
+					this._SaldoActual = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Observacion", DbType="VarChar(MAX)")]
+		public string Observacion
+		{
+			get
+			{
+				return this._Observacion;
+			}
+			set
+			{
+				if ((this._Observacion != value))
+				{
+					this._Observacion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Fecha
+		{
+			get
+			{
+				return this._Fecha;
+			}
+			set
+			{
+				if ((this._Fecha != value))
+				{
+					this._Fecha = value;
 				}
 			}
 		}

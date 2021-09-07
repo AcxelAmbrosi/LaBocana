@@ -48,6 +48,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBLaBocana.dbml</DependentUpon>
     </Compile>
+    <Compile Include="inventario\CajaCD.cs" />
     <Compile Include="inventario\ClienteCD.cs" />
     <Compile Include="inventario\MenuCD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,10 +80,6 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{6e10fbd4-9686-4244-9422-cb60eeff8a98}</Project>
       <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SistemaLaBocana\SistemaLaBocana.csproj">
-      <Project>{b21bb067-6049-480b-a0f5-24bc37fc6810}</Project>
-      <Name>SistemaLaBocana</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
