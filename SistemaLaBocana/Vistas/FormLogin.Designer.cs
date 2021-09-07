@@ -57,7 +57,7 @@ namespace SistemaLaBocana
             this.buttonOrdenar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonOrdenar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOrdenar.Image = global::SistemaLaBocana.Properties.Resources.BtnOrdenar;
+            this.buttonOrdenar.Image = global::SistemaLaBocana.Properties.Resources.botonOrdenar;
             this.buttonOrdenar.Location = new System.Drawing.Point(488, 364);
             this.buttonOrdenar.Name = "buttonOrdenar";
             this.buttonOrdenar.Size = new System.Drawing.Size(300, 96);
@@ -76,7 +76,7 @@ namespace SistemaLaBocana
             this.buttonIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIniciar.Image = global::SistemaLaBocana.Properties.Resources.boton_inicio;
+            this.buttonIniciar.Image = global::SistemaLaBocana.Properties.Resources.botonAdministracion;
             this.buttonIniciar.Location = new System.Drawing.Point(101, 364);
             this.buttonIniciar.Name = "buttonIniciar";
             this.buttonIniciar.Size = new System.Drawing.Size(300, 96);
@@ -85,7 +85,7 @@ namespace SistemaLaBocana
             this.buttonIniciar.UseVisualStyleBackColor = false;
             this.buttonIniciar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // FormLogin
+            // SplashSceen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,7 +94,7 @@ namespace SistemaLaBocana
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormLogin";
+            this.Name = "SplashSceen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.PanelBase.ResumeLayout(false);

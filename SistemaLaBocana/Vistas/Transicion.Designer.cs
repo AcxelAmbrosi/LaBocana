@@ -29,21 +29,10 @@ namespace SistemaLaBocana.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonOrdenar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::SistemaLaBocana.Properties.Resources.ezgif_com_gif_maker__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 499);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonOrdenar
             // 
@@ -56,13 +45,24 @@ namespace SistemaLaBocana.Vistas
             this.buttonOrdenar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOrdenar.Image = global::SistemaLaBocana.Properties.Resources.BtnOrdenar1;
-            this.buttonOrdenar.Location = new System.Drawing.Point(265, 362);
+            this.buttonOrdenar.Location = new System.Drawing.Point(250, 362);
             this.buttonOrdenar.Name = "buttonOrdenar";
             this.buttonOrdenar.Size = new System.Drawing.Size(300, 85);
             this.buttonOrdenar.TabIndex = 6;
             this.buttonOrdenar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonOrdenar.UseVisualStyleBackColor = false;
             this.buttonOrdenar.Click += new System.EventHandler(this.buttonOrdenar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::SistemaLaBocana.Properties.Resources.ezgif_com_gif_maker__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(801, 499);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Transicion
             // 

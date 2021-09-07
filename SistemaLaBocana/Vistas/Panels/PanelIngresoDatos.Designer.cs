@@ -228,6 +228,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Name = "PanelIngresoDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PanelIngresoDatos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

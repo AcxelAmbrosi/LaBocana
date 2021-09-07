@@ -290,6 +290,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.Controls.Add(this.btnOmelette);
             this.Controls.Add(this.btnHuevos);
             this.Name = "PanelPedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PanelPedido";
             this.Load += new System.EventHandler(this.PanelPedido_Load);
             this.ResumeLayout(false);

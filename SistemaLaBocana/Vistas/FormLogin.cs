@@ -41,7 +41,7 @@ namespace SistemaLaBocana
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form frm = new Transicion();
+            Form frm = new Vistas.Panels.PanelSesion();
             frm.Show();
             //buttonIniciar.Hide();
             //AbrirFrm(new PanelSesion());
