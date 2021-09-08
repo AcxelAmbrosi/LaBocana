@@ -141,7 +141,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgCaja;
+        public  System.Windows.Forms.DataGridView dtgCaja;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;

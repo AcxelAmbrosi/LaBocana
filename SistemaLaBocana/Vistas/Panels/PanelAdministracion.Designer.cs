@@ -177,6 +177,6 @@ namespace SistemaLaBocana.Vistas.Panels
         private System.Windows.Forms.Button buttonMesas;
         private System.Windows.Forms.Button buttonPlatillos;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel2;
     }
 }

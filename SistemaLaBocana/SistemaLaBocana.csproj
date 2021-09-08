@@ -69,12 +69,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\ControlUsuario\Caja.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\Caja.Designer.cs">
-      <DependentUpon>Caja.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\ControlUsuario\ControlCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +86,12 @@
     </Compile>
     <Compile Include="Vistas\ControlUsuario\ControlPlatillos.Designer.cs">
       <DependentUpon>ControlPlatillos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmCaja.Designer.cs">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Panels\FrmAbrirCaja.cs">
       <SubType>Form</SubType>
@@ -171,9 +171,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ControlUsuario\Caja.resx">
-      <DependentUpon>Caja.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ControlUsuario\ControlCliente.resx">
       <DependentUpon>ControlCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ControlUsuario\ControlPlatillos.resx">
       <DependentUpon>ControlPlatillos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ControlUsuario\FrmCaja.resx">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Panels\FrmAbrirCaja.resx">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>
@@ -333,6 +333,10 @@
     <None Include="Resources\button.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{6DC78112-536A-46B4-A1F2-73E899CC0E18}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logica\Logica.csproj">
       <Project>{b91a96a0-2bf5-48dc-9160-75e8c2b4cfde}</Project>
       <Name>Logica</Name>

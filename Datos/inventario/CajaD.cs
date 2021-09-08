@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.Data;
 namespace Datos.inventario
 {
-    public class PersonalD
+    public class CajaD
     {
         public bool InsertarCaja(Caja parametros)
         {
@@ -83,7 +83,6 @@ namespace Datos.inventario
                 CONEXIONMAESTRA.cerrar();
             }
         }
-
         public void MostrarCaja(ref DataTable dataTable)
         {
             try

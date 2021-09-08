@@ -25,10 +25,8 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void buttonIniciar_Click(object sender, EventArgs e)
         {
-            Caja control = new Caja();
-            panel2.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            panel2.Controls.Add(control);
+          
+            AbrirFrm(new FrmCaja());
         }
 
         private void buttonClientes_Click(object sender, EventArgs e)
@@ -53,6 +51,17 @@ namespace SistemaLaBocana.Vistas.Panels
             panel2.Controls.Clear();
             control.Dock = DockStyle.Fill;
             panel2.Controls.Add(control);
+        }
+        private void AbrirFrm(Object frmPanel)
+        {
+            if (this.panel2.Controls.Count > 0)
+                this.panel2.Controls.RemoveAt(0);
+            Form frm = frmPanel as Form;
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            this.panel2.Controls.Add(frm);
+            this.panel2.Tag = frm;
+            frm.Show();
         }
     }
 }
