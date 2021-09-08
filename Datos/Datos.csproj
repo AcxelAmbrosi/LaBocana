@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="CONEXIONMAESTRA.cs" />
     <Compile Include="inventario\CajaD.cs" />
+    <Compile Include="inventario\ClienteD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

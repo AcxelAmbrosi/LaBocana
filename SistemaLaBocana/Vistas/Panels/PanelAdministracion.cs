@@ -31,27 +31,19 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            ControlCliente control = new ControlCliente();
-            panel2.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            panel2.Controls.Add(control);
+            AbrirFrm(new FrmCliente());
         }
 
         private void buttonMesas_Click(object sender, EventArgs e)
         {
-            ControlMesas control = new ControlMesas();
-            panel2.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            panel2.Controls.Add(control);
+            AbrirFrm(new FrmMesas());
         }
 
         private void buttonPlatillos_Click(object sender, EventArgs e)
         {
-            ControlPlatillos control = new ControlPlatillos();
-            panel2.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            panel2.Controls.Add(control);
+            AbrirFrm(new FrmMenu());
         }
+
         private void AbrirFrm(Object frmPanel)
         {
             if (this.panel2.Controls.Count > 0)

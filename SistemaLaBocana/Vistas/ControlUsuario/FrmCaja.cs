@@ -53,7 +53,6 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             funcion.MostrarCaja(ref table);
             dtgCaja.DataSource = table;
         }
-
         public void CerrarCaja()
         {
 
@@ -61,24 +60,72 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             CajaD funcion = new CajaD();
 
             if(dtgCaja.CurrentCell != null)
-            {
-                idCaja = Convert.ToInt32(dtgCaja.SelectedCells[0].Value);
-                parametros.IdCaja1 = idCaja;
+            {  
+                var res = MessageBox.Show("¿Esta seguro de Cerrar la caja seleccionada?", "CERRAR CAJA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res.ToString().Equals("Yes"))
+                {
+                    idCaja = Convert.ToInt32(dtgCaja.SelectedCells[0].Value);
+                    parametros.IdCaja1 = idCaja;
 
-            }
+                    if (funcion.CerrarCaja(parametros) == true)
+                    {
+                        MessageBox.Show("Se ha cerrado correctamente la caja Seleccionada");
 
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("La Operacion de caja fue cancelada");
+                }
 
-            if (funcion.CerrarCaja(parametros) == true)
-            {
-                MessageBox.Show("Se Cerrado la caja");
-              
             }
             
+        }
+        public void AnularCaja()
+        {
+
+            Caja parametros = new Caja();
+            CajaD funcion = new CajaD();
+
+            if (dtgCaja.CurrentCell != null)
+            {
+                
+
+                var res = MessageBox.Show("¿Esta seguro de Anular la caja seleccionada?", "ANULAR CAJA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res.ToString().Equals("Yes"))
+                {
+                    idCaja = Convert.ToInt32(dtgCaja.SelectedCells[0].Value);
+                    parametros.IdCaja1 = idCaja;
+
+                    if (funcion.AnularCaja(parametros) == true)
+                    {
+                        MessageBox.Show("Se Anulo correctamente la caja Seleccionada");
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("La Anulacion de caja fue cancelada");
+                }
+
+            }
+
         }
 
         private void dtgCaja_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void dtgCaja_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AnularCaja();
+            MostrarCaja();
         }
     }
 }

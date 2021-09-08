@@ -1,17 +1,17 @@
 ﻿
 namespace SistemaLaBocana.Vistas.ControlUsuario
 {
-    partial class ControlMesas
+    partial class FrmMesas
     {
-        /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +21,11 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -78,7 +78,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.groupBox1.Location = new System.Drawing.Point(41, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(659, 69);
-            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             // 
             // pictureBox3
@@ -161,7 +161,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.flowLayoutPanel1.Location = new System.Drawing.Point(38, 175);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(666, 465);
-            this.flowLayoutPanel1.TabIndex = 18;
+            this.flowLayoutPanel1.TabIndex = 21;
             // 
             // button1
             // 
@@ -362,19 +362,21 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.label5.Location = new System.Drawing.Point(267, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(209, 59);
-            this.label5.TabIndex = 17;
+            this.label5.TabIndex = 20;
             this.label5.Text = "MESAS";
             // 
-            // ControlMesas
+            // FrmMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaLaBocana.Properties.Resources.IngresoDatos;
+            this.ClientSize = new System.Drawing.Size(742, 652);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label5);
-            this.Name = "ControlMesas";
-            this.Size = new System.Drawing.Size(742, 652);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmMesas";
+            this.Text = "FrmMesas";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -387,6 +389,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;

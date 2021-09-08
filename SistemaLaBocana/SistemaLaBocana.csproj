@@ -69,29 +69,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlCliente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlCliente.Designer.cs">
-      <DependentUpon>ControlCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlMesas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlMesas.Designer.cs">
-      <DependentUpon>ControlMesas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlPlatillos.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Vistas\ControlUsuario\ControlPlatillos.Designer.cs">
-      <DependentUpon>ControlPlatillos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\ControlUsuario\FrmCaja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\ControlUsuario\FrmCaja.Designer.cs">
       <DependentUpon>FrmCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlUsuario\FrmMesas.Designer.cs">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Panels\FrmAbrirCaja.cs">
       <SubType>Form</SubType>
@@ -171,17 +171,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ControlUsuario\ControlCliente.resx">
-      <DependentUpon>ControlCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ControlUsuario\ControlMesas.resx">
-      <DependentUpon>ControlMesas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ControlUsuario\ControlPlatillos.resx">
-      <DependentUpon>ControlPlatillos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ControlUsuario\FrmCaja.resx">
       <DependentUpon>FrmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ControlUsuario\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ControlUsuario\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ControlUsuario\FrmMesas.resx">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Panels\FrmAbrirCaja.resx">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>

@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace SistemaLaBocana.Vistas.ControlUsuario
 {
-    public partial class ControlMesas : UserControl
+    public partial class FrmMesas : Form
     {
-        public ControlMesas()
+        public static int NumMesa;
+
+        public FrmMesas()
         {
             InitializeComponent();
-        }
-
-        private void crearMesa()
-        {
-            Button btn = new Button();
-            
         }
     }
 }

@@ -11,21 +11,22 @@ using System.Windows.Forms;
 
 namespace SistemaLaBocana.Vistas.ControlUsuario
 {
-    public partial class ControlCliente : UserControl
+    public partial class FrmMenu : Form
     {
-        public ControlCliente()
+        public FrmMenu()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FrmInsertarMenu frm = new FrmInsertarMenu();
+            frm.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmEditarCliente frm = new FrmEditarCliente();
+            FrmEditarMenu frm = new FrmEditarMenu();
             frm.ShowDialog();
         }
     }
