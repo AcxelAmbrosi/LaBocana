@@ -49,6 +49,11 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             MostrarCliente();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BuscarCliente();
+        }
+
         public void MostrarCliente()
         {
             DataTable table = new DataTable();
@@ -83,6 +88,15 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
 
             }
 
+        }
+
+        public void BuscarCliente()
+        {
+            DataTable table = new DataTable();
+            ClienteD funcion = new ClienteD();
+
+            funcion.BuscarCliente(table, txtBuscador.Text);
+            dtgCliente.DataSource = table;
         }
     }
 }

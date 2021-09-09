@@ -31,17 +31,17 @@ namespace SistemaLaBocana.Vistas.Panels
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSugerencia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -52,17 +52,17 @@ namespace SistemaLaBocana.Vistas.Panels
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtSugerencia);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtCedula);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -88,14 +88,15 @@ namespace SistemaLaBocana.Vistas.Panels
             this.button1.Size = new System.Drawing.Size(35, 40);
             this.button1.TabIndex = 12;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox6
+            // txtSugerencia
             // 
-            this.textBox6.Location = new System.Drawing.Point(50, 451);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(377, 93);
-            this.textBox6.TabIndex = 11;
+            this.txtSugerencia.Location = new System.Drawing.Point(50, 451);
+            this.txtSugerencia.Multiline = true;
+            this.txtSugerencia.Name = "txtSugerencia";
+            this.txtSugerencia.Size = new System.Drawing.Size(377, 93);
+            this.txtSugerencia.TabIndex = 11;
             // 
             // label6
             // 
@@ -106,12 +107,12 @@ namespace SistemaLaBocana.Vistas.Panels
             this.label6.TabIndex = 10;
             this.label6.Text = "Sugerencia del pedido:";
             // 
-            // textBox5
+            // txtTelefono
             // 
-            this.textBox5.Location = new System.Drawing.Point(180, 341);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(247, 35);
-            this.textBox5.TabIndex = 9;
+            this.txtTelefono.Location = new System.Drawing.Point(180, 341);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(247, 35);
+            this.txtTelefono.TabIndex = 9;
             // 
             // label5
             // 
@@ -122,12 +123,12 @@ namespace SistemaLaBocana.Vistas.Panels
             this.label5.TabIndex = 8;
             this.label5.Text = "Telefono:";
             // 
-            // textBox4
+            // txtDireccion
             // 
-            this.textBox4.Location = new System.Drawing.Point(180, 274);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(247, 35);
-            this.textBox4.TabIndex = 7;
+            this.txtDireccion.Location = new System.Drawing.Point(180, 274);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(247, 35);
+            this.txtDireccion.TabIndex = 7;
             // 
             // label4
             // 
@@ -138,12 +139,12 @@ namespace SistemaLaBocana.Vistas.Panels
             this.label4.TabIndex = 6;
             this.label4.Text = "Direccion:";
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(180, 209);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 35);
-            this.textBox3.TabIndex = 5;
+            this.txtApellido.Location = new System.Drawing.Point(180, 209);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(247, 35);
+            this.txtApellido.TabIndex = 5;
             // 
             // label3
             // 
@@ -154,12 +155,12 @@ namespace SistemaLaBocana.Vistas.Panels
             this.label3.TabIndex = 4;
             this.label3.Text = "Apellidos:";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 35);
-            this.textBox2.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(180, 143);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(247, 35);
+            this.txtNombre.TabIndex = 3;
             // 
             // label2
             // 
@@ -170,12 +171,12 @@ namespace SistemaLaBocana.Vistas.Panels
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombres:";
             // 
-            // textBox1
+            // txtCedula
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtCedula.Location = new System.Drawing.Point(180, 81);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(247, 35);
+            this.txtCedula.TabIndex = 1;
             // 
             // label1
             // 
@@ -240,17 +241,17 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSugerencia;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

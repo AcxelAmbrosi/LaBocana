@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Datos.inventario;
+using Logica;
+using SistemaLaBocana.Vistas.ControlUsuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,42 +22,77 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            InsertarCliente();
         }
 
-        /// <summary>
-        /// Revisar el codigo
-        /// </summary>
-        //private void InsertarCliente()
-        //{
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BuscarCliente();
+        }
 
-        //    if (!string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtNombres.Text)
-        //        && !string.IsNullOrEmpty(txtApellidos.Text) && !string.IsNullOrEmpty(txtDireccion.Text)
-        //        && !string.IsNullOrEmpty(txtTelefono.Text))
-        //    {
+        private void BuscarCliente()
+        {
 
-        //        Cliente parametros = new Cliente();
-        //        ClienteD funcion = new ClienteD();
+                DataTable table = new DataTable();
+                ClienteD funcion = new ClienteD();
 
-        //        parametros.Cedula1 = txtCedula.Text;
-        //        parametros.Nombres1 = txtNombres.Text;
-        //        parametros.Apellidos1 = txtApellidos.Text;
-        //        parametros.Direccion1 = txtDireccion.Text;
-        //        parametros.Telefono1 = txtTelefono.Text;
-        //        parametros.IdMesa1 = FrmMesas.NumMesa;
+            try
+            {
+                if (!string.IsNullOrEmpty(txtCedula.Text))
+                {
 
-        //        if (funcion.InsertarCliente(parametros) == true)
-        //        {
-        //            MessageBox.Show("Se Ingreso una nueva caja");
-        //            this.Hide();
+                    funcion.BuscarCliente(table, txtCedula.Text);
+                    txtNombre.Text = table.Rows[0][2].ToString();
+                    txtApellido.Text = table.Rows[0][3].ToString();
+                    txtDireccion.Text = table.Rows[0][4].ToString();
+                    txtTelefono.Text = table.Rows[0][5].ToString();
+                }
+            }
+            catch (Exception)
+            {
 
-        //        }
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Ingrese un monto para continuar");
-        //    }
+               MessageBox.Show("El cliente no se encuentra registrado","CLIENTES",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            
+            }
+            
+            
+            
 
-        //}
+
+        }
+
+        private void InsertarCliente()
+        {
+
+            if (!string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtNombre.Text)
+                && !string.IsNullOrEmpty(txtApellido.Text) && !string.IsNullOrEmpty(txtDireccion.Text)
+                && !string.IsNullOrEmpty(txtTelefono.Text))
+            {
+
+                Cliente parametros = new Cliente();
+                ClienteD funcion = new ClienteD();
+
+                parametros.Cedula1 = txtCedula.Text;
+                parametros.Nombres1 = txtNombre.Text;
+                parametros.Apellidos1 = txtApellido.Text;
+                parametros.Direccion1 = txtDireccion.Text;
+                parametros.Telefono1 = txtTelefono.Text;
+                parametros.IdMesa1 = PanelMesa.NumMesaCarta;
+
+                if (funcion.InsertarCliente(parametros) == true)
+                {
+                    MessageBox.Show("Se Ingreso un nuevo cliente");
+
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Llene todos los campos");
+            }
+
+        }
+
+
     }
 }

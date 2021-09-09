@@ -12,16 +12,12 @@ namespace SistemaLaBocana.Vistas.Panels
 {
     public partial class PanelMesa : Form
     {
+        public static int NumMesaCarta;
+        public static PanelMesa PanelMesaPadre;
         public PanelMesa()
         {
             InitializeComponent();
-        }
-
-        private void TraerMenu()
-        {
-            PanelPedido frm = new PanelPedido();
-            AddOwnedForm(frm);
-            frm.ShowDialog();
+            PanelMesa.PanelMesaPadre = this;
         }
 
         private void PanelMesa_Load(object sender, EventArgs e)
@@ -31,6 +27,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void button1_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 1;
             
             if (btnMesa1.BackColor == Color.White)
             {
@@ -48,6 +45,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa2_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 2;
             if (btnMesa2.BackColor == Color.White)
             {
                 TraerMenu();
@@ -64,6 +62,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa3_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 3;
             if (btnMesa3.BackColor == Color.White)
             {
                 TraerMenu();
@@ -80,6 +79,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa4_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 4;
             if (btnMesa4.BackColor == Color.White)
             {
                 TraerMenu();
@@ -96,6 +96,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa5_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 5;
             if (btnMesa5.BackColor == Color.White)
             {
                 TraerMenu();
@@ -112,6 +113,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa6_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 6;
             if (btnMesa6.BackColor == Color.White)
             {
                 TraerMenu();
@@ -128,6 +130,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa7_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 7;
             if (btnMesa7.BackColor == Color.White)
             {
                 TraerMenu();
@@ -144,6 +147,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa8_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 8;
             if (btnMesa8.BackColor == Color.White)
             {
                 TraerMenu();
@@ -160,6 +164,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa9_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 9;
             if (btnMesa9.BackColor == Color.White)
             {
                 TraerMenu();
@@ -176,6 +181,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa10_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 10;
             if (btnMesa10.BackColor == Color.White)
             {
                 TraerMenu();
@@ -192,6 +198,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa11_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 11;
             if (btnMesa11.BackColor == Color.White)
             {
                 TraerMenu();
@@ -208,6 +215,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa12_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 12;
             if (btnMesa12.BackColor == Color.White)
             {
                 TraerMenu();
@@ -224,6 +232,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa13_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 12;
             if (btnMesa13.BackColor == Color.White)
             {
                 TraerMenu();
@@ -240,6 +249,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa14_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 14;
             if (btnMesa14.BackColor == Color.White)
             {
                 TraerMenu();
@@ -256,6 +266,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa15_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 15;
             if (btnMesa15.BackColor == Color.White)
             {
                 TraerMenu();
@@ -272,6 +283,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa16_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 16;
             if (btnMesa16.BackColor == Color.White)
             {
                 TraerMenu();
@@ -288,6 +300,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa17_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 17;
             if (btnMesa17.BackColor == Color.White)
             {
                 TraerMenu();
@@ -304,6 +317,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa18_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 18;
             if (btnMesa18.BackColor == Color.White)
             {
                 TraerMenu();
@@ -321,6 +335,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void btnMesa19_Click(object sender, EventArgs e)
         {
+            NumMesaCarta = 19;
             if (btnMesa19.BackColor == Color.White)
             {
                 TraerMenu();
@@ -333,6 +348,12 @@ namespace SistemaLaBocana.Vistas.Panels
             {
 
             }
+        }
+
+        private void TraerMenu()
+        {
+            PanelPedido frm = new PanelPedido();
+            frm.ShowDialog();
         }
     }
 }

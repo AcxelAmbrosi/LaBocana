@@ -36,7 +36,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscador = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dtgCliente = new System.Windows.Forms.DataGridView();
@@ -58,6 +58,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button1.Size = new System.Drawing.Size(35, 40);
             this.button1.TabIndex = 20;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -71,15 +72,15 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.label1.TabIndex = 19;
             this.label1.Text = "CLIENTES";
             // 
-            // textBox1
+            // txtBuscador
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(233, 112);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 30);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Tag = "";
+            this.txtBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtBuscador.Location = new System.Drawing.Point(233, 112);
+            this.txtBuscador.Multiline = true;
+            this.txtBuscador.Name = "txtBuscador";
+            this.txtBuscador.Size = new System.Drawing.Size(221, 30);
+            this.txtBuscador.TabIndex = 18;
+            this.txtBuscador.Tag = "";
             // 
             // button3
             // 
@@ -167,7 +168,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.Controls.Add(this.dtgCliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBuscador);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -184,7 +185,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscador;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.DataGridView dtgCliente;
