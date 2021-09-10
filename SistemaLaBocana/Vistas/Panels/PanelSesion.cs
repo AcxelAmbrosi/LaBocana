@@ -21,6 +21,7 @@ namespace SistemaLaBocana.Vistas.Panels
         {
             Form frm = new PanelAdministracion();
             frm.Show();
+           
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Datos.inventario;
 using Logica;
+using Logica.inventario;
 using SistemaLaBocana.Vistas.ControlUsuario;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace SistemaLaBocana.Vistas.Panels
 {
     public partial class PanelIngresoDatos : Form
     {
+        public static decimal subtotal;
         public PanelIngresoDatos()
         {
             InitializeComponent();
@@ -28,6 +30,7 @@ namespace SistemaLaBocana.Vistas.Panels
             {
                 InsertarCliente();
                 InsertarOrden();
+                subtotal += BuscarMenuParaPrecio();
             }
             else
             {
@@ -179,5 +182,32 @@ namespace SistemaLaBocana.Vistas.Panels
 
         }
 
-    }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            subtotal = 0;
+            //GENERAR CRYSTAL
+            InsertarOrden();
+            //EDITAR CAJA
+            
+        }
+
+        //Reparar aun
+        private void MovimientoCaja()
+        {
+            int id = FrmCaja.FormPadre.dtgCaja.Rows.Count;
+            Caja parametros = new Caja();
+            CajaD funcion = new CajaD();
+
+
+            try
+            {
+                funcion.MovimientoCaja(parametros, subtotal);
+            }
+            catch (Exception )
+            {
+
+                throw;
+            }
+            
+        }
 }

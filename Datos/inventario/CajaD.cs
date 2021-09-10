@@ -98,5 +98,29 @@ namespace Datos.inventario
                 MessageBox.Show(ex.StackTrace);
             }
         }
+        public bool MovimientoCaja(Caja parametros, decimal subtotal)
+        {
+            try
+            {
+                CONEXIONMAESTRA.abrir();
+                SqlCommand cmd = new SqlCommand("MovimientoCaja", CONEXIONMAESTRA.conectar);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Caja", parametros.IdCaja1);
+                cmd.Parameters.AddWithValue("@Subtotal", subtotal);
+
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                CONEXIONMAESTRA.cerrar();
+            }
+        }
     }
 }
