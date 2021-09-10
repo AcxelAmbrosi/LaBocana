@@ -22,7 +22,18 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void button3_Click(object sender, EventArgs e)
         {
-            InsertarCliente();
+            if (!string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtNombre.Text)
+                && !string.IsNullOrEmpty(txtApellido.Text) && !string.IsNullOrEmpty(txtDireccion.Text)
+                && !string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                InsertarCliente();
+                InsertarOrden();
+            }
+            else
+            {
+                MessageBox.Show("Por favor,llene todos los campos","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+              
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,8 +44,8 @@ namespace SistemaLaBocana.Vistas.Panels
         private void BuscarCliente()
         {
 
-                DataTable table = new DataTable();
-                ClienteD funcion = new ClienteD();
+            DataTable table = new DataTable();
+            ClienteD funcion = new ClienteD();
 
             try
             {
@@ -51,13 +62,12 @@ namespace SistemaLaBocana.Vistas.Panels
             catch (Exception)
             {
 
-               MessageBox.Show("El cliente no se encuentra registrado","CLIENTES",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-            
+                MessageBox.Show("El cliente no se encuentra registrado", "CLIENTES", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNombre.Clear();
+                txtApellido.Clear();
+                txtDireccion.Clear();
+                txtTelefono.Clear();
             }
-            
-            
-            
-
 
         }
 
@@ -81,7 +91,7 @@ namespace SistemaLaBocana.Vistas.Panels
 
                 if (funcion.InsertarCliente(parametros) == true)
                 {
-                    MessageBox.Show("Se Ingreso un nuevo cliente");
+                    MessageBox.Show("Vaya, eres nuevo. Se registro tu orden.");
 
                     this.Close();
                 }
@@ -93,6 +103,81 @@ namespace SistemaLaBocana.Vistas.Panels
 
         }
 
+        private void InsertarOrden()
+        {
+            if (!string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtNombre.Text)
+                && !string.IsNullOrEmpty(txtApellido.Text) && !string.IsNullOrEmpty(txtDireccion.Text)
+                && !string.IsNullOrEmpty(txtTelefono.Text))
+            {
+
+                Orden parametros = new Orden();
+                OrdenD funcion = new OrdenD();
+
+                parametros.Id_Menu1 = PanelPedido.idMenu;
+                parametros.Id_Mesa1 = PanelMesa.NumMesaCarta;
+                parametros.Id_Cliente1 = BuscarClienteParaOrden();
+                parametros.Total = BuscarMenuParaPrecio();
+                parametros.Sugerencia1 = txtSugerencia.Text;
+
+                if (funcion.InsertarOrden(parametros) == true)
+                {
+
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Llene todos los campos");
+            }
+
+        }
+
+        private int BuscarClienteParaOrden()
+        {
+            int id = 0;
+            DataTable table = new DataTable();
+            ClienteD funcion = new ClienteD();
+
+            try
+            {
+                if (!string.IsNullOrEmpty(txtCedula.Text))
+                {
+
+                    funcion.BuscarCliente(table, txtCedula.Text);
+                    id = Convert.ToInt32(table.Rows[0][0]);
+
+                }
+            }
+            catch (Exception)
+            {
+
+
+            }
+            return id;
+        }
+
+        private decimal BuscarMenuParaPrecio()
+        {
+            decimal precio = 0;
+            DataTable table = new DataTable();
+            MenuD funcion = new MenuD();
+
+            try
+            {
+
+
+                funcion.BuscarMenu(table, PanelPedido.idMenu.ToString());
+                precio = Convert.ToDecimal(table.Rows[0][2]);
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+            return precio;
+
+        }
 
     }
 }
