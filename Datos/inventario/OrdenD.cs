@@ -39,5 +39,7 @@ namespace Datos.inventario
                 CONEXIONMAESTRA.cerrar();
             }
         }
+
+
     }
 }
