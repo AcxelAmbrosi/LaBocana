@@ -263,6 +263,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button10.TabIndex = 9;
             this.button10.Text = "MESA 10";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -378,6 +379,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMesas";
             this.Text = "FrmMesas";
+            this.Load += new System.EventHandler(this.FrmMesas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

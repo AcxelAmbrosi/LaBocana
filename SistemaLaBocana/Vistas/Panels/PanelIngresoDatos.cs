@@ -34,9 +34,9 @@ namespace SistemaLaBocana.Vistas.Panels
             }
             else
             {
-                MessageBox.Show("Por favor,llene todos los campos","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor,llene todos los campos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-              
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -184,30 +184,51 @@ namespace SistemaLaBocana.Vistas.Panels
 
         private void button2_Click(object sender, EventArgs e)
         {
-            subtotal = 0;
+            subtotal += BuscarMenuParaPrecio();           
             //GENERAR CRYSTAL
             InsertarOrden();
-            //EDITAR CAJA
-            
+            MovimientoCaja();
+            subtotal = 0;
+
+
         }
 
-        //Reparar aun
         private void MovimientoCaja()
         {
-            int id = FrmCaja.FormPadre.dtgCaja.Rows.Count;
             Caja parametros = new Caja();
             CajaD funcion = new CajaD();
 
-
+            parametros.IdCaja1 = CajaActual();
             try
             {
                 funcion.MovimientoCaja(parametros, subtotal);
             }
-            catch (Exception )
+            catch (Exception)
             {
 
                 throw;
             }
-            
+
         }
-}
+
+        private int CajaActual()
+        {
+            int id = 0;
+            DataTable table = new DataTable();
+            CajaD funcion = new CajaD();
+
+            try
+            {
+
+                funcion.CajaActual(ref table);
+                id = Convert.ToInt32(table.Rows[0][0]);
+
+            }
+            catch (Exception)
+            {
+
+            }
+            return id;
+
+        } }
+    }

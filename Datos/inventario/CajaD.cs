@@ -121,6 +121,22 @@ namespace Datos.inventario
             {
                 CONEXIONMAESTRA.cerrar();
             }
+
+        }
+        public void CajaActual(ref DataTable dataTable)
+        {
+            try
+            {
+                CONEXIONMAESTRA.abrir();
+                SqlDataAdapter da = new SqlDataAdapter("CajaActual", CONEXIONMAESTRA.conectar);
+                da.Fill(dataTable);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.StackTrace);
+            }
         }
     }
 }

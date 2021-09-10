@@ -12,15 +12,15 @@ namespace Datos.inventario
 {
     public class MesaD
     {
-        public bool EstadoMesa(Mesa parametros)
+        public bool CambiarEstado(Mesa parametros)
         {
             try
             {
                 CONEXIONMAESTRA.abrir();
-                SqlCommand cmd = new SqlCommand("EstadoMesa", CONEXIONMAESTRA.conectar);
+                SqlCommand cmd = new SqlCommand("CambiarEstado", CONEXIONMAESTRA.conectar);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Id_Mesa", parametros.Id_Mesa1);
-                cmd.Parameters.AddWithValue("@Id_Mesa", parametros.Id_Mesa1);
+                cmd.Parameters.AddWithValue("@Estado", parametros.Estado);
                 cmd.ExecuteNonQuery();
                 return true;
             }
@@ -29,6 +29,28 @@ namespace Datos.inventario
 
                 MessageBox.Show(ex.Message);
                 return false;
+            }
+            finally
+            {
+                CONEXIONMAESTRA.cerrar();
+            }
+        }
+
+        public void BuscarMesa(ref DataTable dataTable, string buscador)
+        {
+            try
+            {
+                CONEXIONMAESTRA.abrir();
+                SqlDataAdapter da = new SqlDataAdapter("BuscarMesaF", CONEXIONMAESTRA.conectar);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Buscar", buscador);
+                da.Fill(dataTable);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
