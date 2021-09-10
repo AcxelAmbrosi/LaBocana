@@ -6,7 +6,7 @@ namespace SistemaLaBocana.Vistas.Panels
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@ namespace SistemaLaBocana.Vistas.Panels
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.btnMesa1 = new System.Windows.Forms.Button();
             this.btnMesa2 = new System.Windows.Forms.Button();
@@ -314,24 +314,24 @@ namespace SistemaLaBocana.Vistas.Panels
 
         #endregion
 
-        private System.Windows.Forms.Button btnMesa1;
-        private System.Windows.Forms.Button btnMesa2;
-        private System.Windows.Forms.Button btnMesa3;
-        private System.Windows.Forms.Button btnMesa4;
-        private System.Windows.Forms.Button btnMesa5;
-        private System.Windows.Forms.Button btnMesa6;
-        private System.Windows.Forms.Button btnMesa7;
-        private System.Windows.Forms.Button btnMesa8;
-        private System.Windows.Forms.Button btnMesa9;
-        private System.Windows.Forms.Button btnMesa10;
-        private System.Windows.Forms.Button btnMesa11;
-        private System.Windows.Forms.Button btnMesa12;
-        private System.Windows.Forms.Button btnMesa13;
-        private System.Windows.Forms.Button btnMesa14;
-        private System.Windows.Forms.Button btnMesa15;
-        private System.Windows.Forms.Button btnMesa16;
-        private System.Windows.Forms.Button btnMesa17;
-        private System.Windows.Forms.Button btnMesa18;
-        private System.Windows.Forms.Button btnMesa19;
+        public System.Windows.Forms.Button btnMesa1;
+        public System.Windows.Forms.Button btnMesa2;
+        public System.Windows.Forms.Button btnMesa3;
+        public System.Windows.Forms.Button btnMesa4;
+        public System.Windows.Forms.Button btnMesa5;
+        public System.Windows.Forms.Button btnMesa6;
+        public System.Windows.Forms.Button btnMesa7;
+        public System.Windows.Forms.Button btnMesa8;
+        public System.Windows.Forms.Button btnMesa9;
+        public System.Windows.Forms.Button btnMesa10;
+        public System.Windows.Forms.Button btnMesa11;
+        public System.Windows.Forms.Button btnMesa12;
+        public System.Windows.Forms.Button btnMesa13;
+        public System.Windows.Forms.Button btnMesa14;
+        public System.Windows.Forms.Button btnMesa15;
+        public System.Windows.Forms.Button btnMesa16;
+        public System.Windows.Forms.Button btnMesa17;
+        public System.Windows.Forms.Button btnMesa18;
+        public System.Windows.Forms.Button btnMesa19;
     }
 }

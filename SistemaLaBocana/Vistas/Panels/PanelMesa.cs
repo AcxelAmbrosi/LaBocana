@@ -31,7 +31,7 @@ namespace SistemaLaBocana.Vistas.Panels
             
             if (btnMesa1.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa1.BackColor == Color.Green)
             {
@@ -48,7 +48,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 2;
             if (btnMesa2.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa2.BackColor == Color.Green)
             {
@@ -65,7 +65,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 3;
             if (btnMesa3.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa3.BackColor == Color.Green)
             {
@@ -82,7 +82,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 4;
             if (btnMesa4.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa4.BackColor == Color.Green)
             {
@@ -99,7 +99,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 5;
             if (btnMesa5.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa5.BackColor == Color.Green)
             {
@@ -116,7 +116,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 6;
             if (btnMesa6.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa6.BackColor == Color.Green)
             {
@@ -133,7 +133,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 7;
             if (btnMesa7.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa7.BackColor == Color.Green)
             {
@@ -150,7 +150,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 8;
             if (btnMesa8.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa8.BackColor == Color.Green)
             {
@@ -167,7 +167,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 9;
             if (btnMesa9.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa9.BackColor == Color.Green)
             {
@@ -184,7 +184,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 10;
             if (btnMesa10.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa10.BackColor == Color.Green)
             {
@@ -201,7 +201,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 11;
             if (btnMesa11.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa11.BackColor == Color.Green)
             {
@@ -218,7 +218,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 12;
             if (btnMesa12.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa12.BackColor == Color.Green)
             {
@@ -235,7 +235,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 12;
             if (btnMesa13.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa13.BackColor == Color.Green)
             {
@@ -252,7 +252,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 14;
             if (btnMesa14.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa14.BackColor == Color.Green)
             {
@@ -269,7 +269,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 15;
             if (btnMesa15.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa15.BackColor == Color.Green)
             {
@@ -286,7 +286,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 16;
             if (btnMesa16.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa16.BackColor == Color.Green)
             {
@@ -303,7 +303,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 17;
             if (btnMesa17.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa17.BackColor == Color.Green)
             {
@@ -320,7 +320,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 18;
             if (btnMesa18.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa18.BackColor == Color.Green)
             {
@@ -338,7 +338,7 @@ namespace SistemaLaBocana.Vistas.Panels
             NumMesaCarta = 19;
             if (btnMesa19.BackColor == Color.White)
             {
-                TraerMenu();
+                TraerPago();
             }
             else if (btnMesa19.BackColor == Color.Green)
             {
@@ -350,10 +350,16 @@ namespace SistemaLaBocana.Vistas.Panels
             }
         }
 
-        private void TraerMenu()
+        private void TraerPedido()
         {
             PanelPedido frm = new PanelPedido();
             frm.ShowDialog();
         }
+        private void TraerPago()
+        {
+            FrmMetodoPago frm = new FrmMetodoPago();
+            frm.ShowDialog();
+        }
+
     }
 }

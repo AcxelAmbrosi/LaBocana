@@ -17,7 +17,7 @@ namespace SistemaLaBocana
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashSceen());
+            Application.Run(new FormLogin());
         }
     }
 }

@@ -49,6 +49,7 @@
     <Compile Include="inventario\CajaD.cs" />
     <Compile Include="inventario\ClienteD.cs" />
     <Compile Include="inventario\MenuD.cs" />
+    <Compile Include="inventario\MesaD.cs" />
     <Compile Include="inventario\OrdenD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

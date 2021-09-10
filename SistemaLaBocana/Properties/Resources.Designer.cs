@@ -63,6 +63,16 @@ namespace SistemaLaBocana.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1619042848 {
+            get {
+                object obj = ResourceManager.GetObject("1619042848", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bienvenido {
             get {
                 object obj = ResourceManager.GetObject("bienvenido", resourceCulture);
@@ -283,6 +293,16 @@ namespace SistemaLaBocana.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mode_of_payment {
+            get {
+                object obj = ResourceManager.GetObject("mode-of-payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PedirYpagar {
             get {
                 object obj = ResourceManager.GetObject("PedirYpagar", resourceCulture);
@@ -333,6 +353,17 @@ namespace SistemaLaBocana.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_check_mark_symbol_flea_miscellaneous_angle_photography {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-check-mark-symbol-flea-miscellaneous-angle-photogr" +
+                        "aphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SeguirPidiendo {
             get {
                 object obj = ResourceManager.GetObject("SeguirPidiendo", resourceCulture);
@@ -346,6 +377,16 @@ namespace SistemaLaBocana.Properties {
         internal static System.Drawing.Bitmap splash {
             get {
                 object obj = ResourceManager.GetObject("splash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tarjeta_de_creidto_pasa_por_terminal {
+            get {
+                object obj = ResourceManager.GetObject("tarjeta-de-creidto-pasa-por-terminal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

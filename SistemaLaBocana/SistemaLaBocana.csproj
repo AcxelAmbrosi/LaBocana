@@ -117,6 +117,12 @@
     <Compile Include="Vistas\Panels\FrmInsertarMenu.Designer.cs">
       <DependentUpon>FrmInsertarMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Panels\FrmMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Panels\FrmMetodoPago.Designer.cs">
+      <DependentUpon>FrmMetodoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Panels\PanelAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Panels\FrmInsertarMenu.resx">
       <DependentUpon>FrmInsertarMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Panels\FrmMetodoPago.resx">
+      <DependentUpon>FrmMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Panels\PanelAdministracion.resx">
       <DependentUpon>PanelAdministracion.cs</DependentUpon>
@@ -341,6 +350,18 @@
       <Project>{b91a96a0-2bf5-48dc-9160-75e8c2b4cfde}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1619042848.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mode-of-payment.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjeta-de-creidto-pasa-por-terminal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-check-mark-symbol-flea-miscellaneous-angle-photography.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
