@@ -80,6 +80,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.groupBox1.Size = new System.Drawing.Size(659, 69);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox3
             // 
@@ -183,6 +184,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button2.TabIndex = 1;
             this.button2.Text = "MESA 2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -193,6 +195,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button3.TabIndex = 2;
             this.button3.Text = "MESA 3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -203,6 +206,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button4.TabIndex = 3;
             this.button4.Text = "MESA 4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -213,6 +217,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button5.TabIndex = 4;
             this.button5.Text = "MESA 5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -223,6 +228,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button6.TabIndex = 5;
             this.button6.Text = "MESA 6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -233,6 +239,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button7.TabIndex = 6;
             this.button7.Text = "MESA 7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -243,6 +250,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button8.TabIndex = 7;
             this.button8.Text = "MESA 8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -253,6 +261,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button9.TabIndex = 8;
             this.button9.Text = "MESA 9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -274,6 +283,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button11.TabIndex = 10;
             this.button11.Text = "MESA 11";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -284,6 +294,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button12.TabIndex = 11;
             this.button12.Text = "MESA 12";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -294,6 +305,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button13.TabIndex = 12;
             this.button13.Text = "MESA 13";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -304,6 +316,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button14.TabIndex = 13;
             this.button14.Text = "MESA 14";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -314,6 +327,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button15.TabIndex = 14;
             this.button15.Text = "MESA 15";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -324,6 +338,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button16.TabIndex = 15;
             this.button16.Text = "MESA 16";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -334,6 +349,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button17.TabIndex = 16;
             this.button17.Text = "MESA 17";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -344,6 +360,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button18.TabIndex = 17;
             this.button18.Text = "MESA 18";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -354,6 +371,7 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
             this.button19.TabIndex = 18;
             this.button19.Text = "MESA 19";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // label5
             // 

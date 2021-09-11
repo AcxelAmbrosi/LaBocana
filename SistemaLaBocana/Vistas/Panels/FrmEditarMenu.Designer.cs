@@ -99,6 +99,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.button1.TabIndex = 31;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmEditarMenu
             // 
@@ -115,6 +116,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.Name = "FrmEditarMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEditarMenu";
+            this.Load += new System.EventHandler(this.FrmEditarMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

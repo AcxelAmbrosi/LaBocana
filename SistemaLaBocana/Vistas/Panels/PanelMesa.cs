@@ -27,117 +27,193 @@ namespace SistemaLaBocana.Vistas.Panels
            
             if (MostrarEstado("1") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button1.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa1.BackColor = Color.Green;
             }
+            if (MostrarEstado("1") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa1.BackColor = Color.Red;
+            }
             if (MostrarEstado("2") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button2.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa2.BackColor = Color.Green;
             }
+            if (MostrarEstado("2") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa2.BackColor = Color.Red;
+            }
             if (MostrarEstado("3") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button3.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa3.BackColor = Color.Green;
             }
+            if (MostrarEstado("3") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa3.BackColor = Color.Red;
+            }
             if (MostrarEstado("4") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button4.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa4.BackColor = Color.Green;
             }
+            if (MostrarEstado("4") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa4.BackColor = Color.Red;
+            }
             if (MostrarEstado("5") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button5.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa5.BackColor = Color.Green;
             }
+            if (MostrarEstado("5") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa5.BackColor = Color.Red;
+            }
             if (MostrarEstado("6") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button6.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa6.BackColor = Color.Green;
             }
+            if (MostrarEstado("6") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa6.BackColor = Color.Red;
+            }
             if (MostrarEstado("7") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button7.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa7.BackColor = Color.Green;
             }
+            if (MostrarEstado("7") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa7.BackColor = Color.Red;
+            }
             if (MostrarEstado("8") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button8.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa8.BackColor = Color.Green;
             }
+            if (MostrarEstado("8") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa8.BackColor = Color.Red;
+            }
             if (MostrarEstado("9") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button9.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa9.BackColor = Color.Green;
             }
+            if (MostrarEstado("9") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa9.BackColor = Color.Red;
+            }
             if (MostrarEstado("10") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button10.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa10.BackColor = Color.Green;
             }
+            if (MostrarEstado("10") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa10.BackColor = Color.Red;
+            }
             if (MostrarEstado("11") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button11.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa11.BackColor = Color.Green;
             }
+            if (MostrarEstado("11") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa11.BackColor = Color.Red;
+            }
             if (MostrarEstado("12") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button12.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa12.BackColor = Color.Green;
             }
+            if (MostrarEstado("12") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa12.BackColor = Color.Red;
+            }
             if (MostrarEstado("13") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button13.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa13.BackColor = Color.Green;
             }
+            if (MostrarEstado("13") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa13.BackColor = Color.Red;
+            }
             if (MostrarEstado("14") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button14.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa14.BackColor = Color.Green;
             }
+            if (MostrarEstado("14") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa14.BackColor = Color.Red;
+            }
             if (MostrarEstado("15") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button15.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa15.BackColor = Color.Green;
             }
+            if (MostrarEstado("15") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa15.BackColor = Color.Red;
+            }
             if (MostrarEstado("16") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button16.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa16.BackColor = Color.Green;
             }
+            if (MostrarEstado("16") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa16.BackColor = Color.Red;
+            }
             if (MostrarEstado("17") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button17.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa17.BackColor = Color.Green;
             }
+            if (MostrarEstado("17") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa17.BackColor = Color.Red;
+            }
             if (MostrarEstado("18") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button18.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa18.BackColor = Color.Green;
             }
+            if (MostrarEstado("18") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa18.BackColor = Color.Red;
+            }
             if (MostrarEstado("19") == "Preparacio")
             {
-                FrmMesas.FrmMesasPadre.button19.BackColor = Color.Green;
 
                 PanelMesa.PanelMesaPadre.btnMesa19.BackColor = Color.Green;
+            }
+            if (MostrarEstado("19") == "Ocupado")
+            {
+
+                PanelMesa.PanelMesaPadre.btnMesa19.BackColor = Color.Red;
             }
 
         }

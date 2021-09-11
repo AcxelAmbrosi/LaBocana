@@ -363,5 +363,11 @@
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-check-mark-symbol-flea-miscellaneous-angle-photography.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonOrdenes.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

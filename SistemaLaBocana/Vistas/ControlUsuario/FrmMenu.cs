@@ -1,4 +1,5 @@
-﻿using SistemaLaBocana.Vistas.Panels;
+﻿using Datos.inventario;
+using SistemaLaBocana.Vistas.Panels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,12 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
 {
     public partial class FrmMenu : Form
     {
+
+        public static FrmMenu FrmMenuPadre;
         public FrmMenu()
         {
             InitializeComponent();
+            FrmMenu.FrmMenuPadre = this;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,8 +30,46 @@ namespace SistemaLaBocana.Vistas.ControlUsuario
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmEditarMenu frm = new FrmEditarMenu();
-            frm.ShowDialog();
+            if (dtgMenu.CurrentCell != null)
+            {
+                FrmEditarMenu frm = new FrmEditarMenu();
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor Seleccione un menu a editar", "EDITAR MENU", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            MostrarMenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BuscarMenu();
+        }
+
+        public void MostrarMenu()
+        {
+            DataTable table = new DataTable();
+            MenuD funcion = new MenuD();
+            funcion.MostrarMenu(ref table);
+            dtgMenu.DataSource = table;
+        }
+        public void BuscarMenu()
+        {
+            DataTable table = new DataTable();
+            MenuD funcion = new MenuD();
+
+            funcion.BuscarMenu(table, txtBuscador.Text);
+            dtgMenu.DataSource = table;
+        }
+
+
+
     }
 }

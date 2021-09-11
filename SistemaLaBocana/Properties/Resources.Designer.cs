@@ -153,6 +153,16 @@ namespace SistemaLaBocana.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botonOrdenes {
+            get {
+                object obj = ResourceManager.GetObject("botonOrdenes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap botonPlatillos {
             get {
                 object obj = ResourceManager.GetObject("botonPlatillos", resourceCulture);
@@ -276,6 +286,16 @@ namespace SistemaLaBocana.Properties {
         internal static System.Drawing.Bitmap IngresoDatos {
             get {
                 object obj = ResourceManager.GetObject("IngresoDatos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoAdmin {
+            get {
+                object obj = ResourceManager.GetObject("logoAdmin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

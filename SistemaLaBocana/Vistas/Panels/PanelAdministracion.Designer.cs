@@ -29,20 +29,31 @@ namespace SistemaLaBocana.Vistas.Panels
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonPlatillos = new System.Windows.Forms.Button();
             this.buttonMesas = new System.Windows.Forms.Button();
             this.buttonClientes = new System.Windows.Forms.Button();
             this.buttonCaja = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonPedidos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::SistemaLaBocana.Properties.Resources.IngresoDatos;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(241, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(742, 652);
+            this.panel2.TabIndex = 1;
+            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::SistemaLaBocana.Properties.Resources.IngresoDatos;
+            this.panel1.Controls.Add(this.buttonPedidos);
             this.panel1.Controls.Add(this.buttonPlatillos);
             this.panel1.Controls.Add(this.buttonMesas);
             this.panel1.Controls.Add(this.buttonClientes);
@@ -66,7 +77,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.buttonPlatillos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonPlatillos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlatillos.Image = global::SistemaLaBocana.Properties.Resources.botonPlatillos;
-            this.buttonPlatillos.Location = new System.Drawing.Point(0, 397);
+            this.buttonPlatillos.Location = new System.Drawing.Point(0, 413);
             this.buttonPlatillos.Name = "buttonPlatillos";
             this.buttonPlatillos.Size = new System.Drawing.Size(241, 96);
             this.buttonPlatillos.TabIndex = 8;
@@ -86,7 +97,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.buttonMesas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMesas.Image = global::SistemaLaBocana.Properties.Resources.botonMesas;
-            this.buttonMesas.Location = new System.Drawing.Point(0, 301);
+            this.buttonMesas.Location = new System.Drawing.Point(0, 317);
             this.buttonMesas.Name = "buttonMesas";
             this.buttonMesas.Size = new System.Drawing.Size(241, 96);
             this.buttonMesas.TabIndex = 7;
@@ -106,7 +117,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.buttonClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClientes.Image = global::SistemaLaBocana.Properties.Resources.botonClientes;
-            this.buttonClientes.Location = new System.Drawing.Point(0, 205);
+            this.buttonClientes.Location = new System.Drawing.Point(0, 221);
             this.buttonClientes.Name = "buttonClientes";
             this.buttonClientes.Size = new System.Drawing.Size(241, 96);
             this.buttonClientes.TabIndex = 6;
@@ -126,7 +137,7 @@ namespace SistemaLaBocana.Vistas.Panels
             this.buttonCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCaja.Image = global::SistemaLaBocana.Properties.Resources.botonCaja;
-            this.buttonCaja.Location = new System.Drawing.Point(0, 109);
+            this.buttonCaja.Location = new System.Drawing.Point(0, 125);
             this.buttonCaja.Name = "buttonCaja";
             this.buttonCaja.Size = new System.Drawing.Size(241, 96);
             this.buttonCaja.TabIndex = 5;
@@ -137,20 +148,32 @@ namespace SistemaLaBocana.Vistas.Panels
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::SistemaLaBocana.Properties.Resources.logoAdmin;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(241, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // buttonPedidos
             // 
-            this.panel2.BackgroundImage = global::SistemaLaBocana.Properties.Resources.IngresoDatos;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(241, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(742, 652);
-            this.panel2.TabIndex = 1;
+            this.buttonPedidos.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonPedidos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPedidos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonPedidos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonPedidos.FlatAppearance.BorderSize = 0;
+            this.buttonPedidos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonPedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPedidos.Image = global::SistemaLaBocana.Properties.Resources.botonOrdenes;
+            this.buttonPedidos.Location = new System.Drawing.Point(0, 509);
+            this.buttonPedidos.Name = "buttonPedidos";
+            this.buttonPedidos.Size = new System.Drawing.Size(241, 96);
+            this.buttonPedidos.TabIndex = 9;
+            this.buttonPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonPedidos.UseVisualStyleBackColor = false;
             // 
             // PanelAdministracion
             // 
@@ -178,5 +201,6 @@ namespace SistemaLaBocana.Vistas.Panels
         private System.Windows.Forms.Button buttonPlatillos;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button buttonPedidos;
     }
 }
